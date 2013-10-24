@@ -1,0 +1,51 @@
+body {
+    /*background-color:#16a085;*/
+    background:white;
+    min-width:400px;
+    overflow:hidden;
+    margin:0;
+}
+
+#iphone-wrapper {
+    height:auto;
+    width:auto;
+    display:inline-block;
+    position: relative;
+}
+
+#iphone {
+    height:600px;
+    margin-top:15px;
+}
+
+#iphone-content {
+    position:absolute;
+    background-color:white;
+    top:103px;
+    left:23px;
+    height:427px;
+    width:241px;
+}
+
+#iphone-navbar {
+    width:100%;
+    position:relative;
+    z-index:100;
+    background-color: rgba(255,255,255, 0.9);
+}
+
+#chat-box {
+    margin-top:-51px;
+    padding-top:50px;
+    height:378px;
+    overflow-y:scroll;
+}
+
+.vic-box {
+    max-width: 60%;
+    padding:10px;
+    width:auto;
+    height:auto;
+    background-color: rgb(0,118,225);
+    margin-bottom:3px;
+}
