@@ -4,6 +4,12 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         $("#iphone-wrapper").css({"margin-left": ($(window).width() - $("#iphone-wrapper").width())/2 });
+
+        var width = $(window).width();
+        if (width < 940)
+            $("#title").css({"opacity": (width - 640)/300 });
+        else
+            $("#title").css({"opacity": 1 });
     });
 
     /*$(window).on('mousewheel DOMMouseScroll',function(e){

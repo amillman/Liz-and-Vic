@@ -13,10 +13,19 @@
 
 body {
     /*background-color:#16a085;*/
+    position:relative;
     background:white;
     min-width:400px;
     overflow:hidden;
     margin:0;
+}
+
+#title {
+    position:absolute;
+    top:200px;
+    left:40px;
+    font-size:50px;
+    color:black;
 }
 
 #iphone-wrapper {
@@ -68,8 +77,9 @@ body {
     position:absolute;
     top:0px;
     padding-top:52px;
-    height:375px;
+    height:370px;
     overflow-y:scroll;
+    padding-bottom:5px;
 }
 
 .vic-box {
