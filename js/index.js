@@ -1,7 +1,24 @@
 $(document).ready(function() {
 
+    //adjust iphone to middle of window screen
     $("#iphone-wrapper").css({"margin-left": ($(window).width() - $("#iphone-wrapper").width())/2 });
 
+    //opening animations
+
+    $("#title, #author").animate({
+        opacity:1
+    }, 1200,function() {
+        $("#iphone-wrapper").animate({
+            top: 0
+        }, 1000, function() {
+            $(".arrow").animate({
+                opacity:1
+            }, 500);
+        });
+    });
+
+
+    //adjust iphone to middle of window screen upon resize
     $(window).resize(function() {
 
         var width = $(window).width();
