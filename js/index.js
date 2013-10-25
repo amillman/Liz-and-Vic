@@ -3,13 +3,26 @@ $(document).ready(function() {
     $("#iphone-wrapper").css({"margin-left": ($(window).width() - $("#iphone-wrapper").width())/2 });
 
     $(window).resize(function() {
-        $("#iphone-wrapper").css({"margin-left": ($(window).width() - $("#iphone-wrapper").width())/2 });
 
         var width = $(window).width();
+
+        $("#iphone-wrapper").css({"margin-left": (width - $("#iphone-wrapper").width())/2 });
+
         if (width < 940)
-            $("#title").css({"opacity": (width - 640)/300 });
+            $(".fadeable").css({"opacity": (width - 640)/300 });
         else
-            $("#title").css({"opacity": 1 });
+            $(".fadeable").css({"opacity": 1 });
+    });
+
+    $(".arrow").click(function(){
+        if($(this).attr('id') == "down")
+            $("#chat-box").animate({
+                scrollTop: $("#chat-box").scrollTop() + 330
+            }, 500);
+        else if($(this).attr('id') == "up")
+            $("#chat-box").animate({
+                scrollTop: $("#chat-box").scrollTop() - 330
+            }, 500);
     });
 
     /*$(window).on('mousewheel DOMMouseScroll',function(e){

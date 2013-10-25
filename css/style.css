@@ -4,11 +4,28 @@
     src: url("../font/HelveticaNeueLight.ttf");
 }
 
+@font-face
+{
+    font-family: FontAwesome;
+    src: url("../font/fontawesome-webfont.ttf");
+}
+
 * {
     font-family: HelveticaNeue;
     color:white;
     font-size:12px;
     line-height:16px;
+}
+
+html {
+    overflow:hidden;
+    cursor:default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -22,11 +39,35 @@ body {
 
 #title {
     position:absolute;
-    top:200px;
+    top:100px;
     left:40px;
     font-size:50px;
-    color:black;
+    color:#222222;
 }
+
+.arrow {
+    position:absolute;
+    left:-70px;
+    font-family:FontAwesome;
+    font-size:70px;
+    color:#cccccc;
+
+    cursor:pointer;
+    transition: all 0.4s ease;
+}
+
+.arrow:hover {
+    color:#333333;
+}
+
+#up {
+    top:250px;
+}
+
+#down {
+    top:350px;
+}
+
 
 #iphone-wrapper {
     height:auto;
@@ -90,7 +131,7 @@ body {
     padding-bottom:5px;
     padding-left:10px;
     padding-right:10px;
-    background-color: rgb(0,118,225);
+    background-color: rgb(63, 136, 255);
     border-radius:12px;
     margin-bottom:2px;
     margin-left:35%;
@@ -104,7 +145,7 @@ body {
     padding-bottom:5px;
     padding-left:10px;
     padding-right:10px;
-    background-color: rgb(215,215,215);
+    background-color: rgb(235, 235, 235);
     color:black;
     border-radius:12px;
     margin-bottom:2px;
