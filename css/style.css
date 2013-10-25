@@ -1,3 +1,16 @@
+@font-face
+{
+    font-family: HNL;
+    src: url("../font/HelveticaNeueLight.ttf");
+}
+
+* {
+    font-family: HelveticaNeue;
+    color:white;
+    font-size:12px;
+    line-height:16px;
+}
+
 body {
     /*background-color:#16a085;*/
     background:white;
@@ -34,18 +47,57 @@ body {
     background-color: rgba(255,255,255, 0.9);
 }
 
+#iphone-screen-fade {
+    display:none; /*until problem fixed*/
+    position:relative;
+    width: 100%;
+    margin-top: -4px;
+    height: 380px;
+    z-index:50;
+
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.2) 35%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(35%,rgba(255,255,255,0.2)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 35%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 35%,rgba(255,255,255,0) 70%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 35%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.2) 35%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
 #chat-box {
-    margin-top:-51px;
-    padding-top:50px;
-    height:378px;
+    position:absolute;
+    top:0px;
+    padding-top:52px;
+    height:375px;
     overflow-y:scroll;
 }
 
 .vic-box {
-    max-width: 60%;
-    padding:10px;
-    width:auto;
-    height:auto;
+    display:inline-block;
+    float:right;
+    max-width:60%;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
     background-color: rgb(0,118,225);
-    margin-bottom:3px;
+    border-radius:12px;
+    margin-bottom:2px;
+    margin-left:35%;
+    margin-right:12px;
+}
+
+.liz-box {
+    display:inline-block;
+    max-width:60%;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color: rgb(215,215,215);
+    color:black;
+    border-radius:12px;
+    margin-bottom:2px;
+    margin-left:12px;
+    margin-right:35%;
 }
