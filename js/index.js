@@ -34,11 +34,11 @@ $(document).ready(function() {
     $(".arrow").click(function(){
         if($(this).attr('id') == "down")
             $("#chat-box").animate({
-                scrollTop: $("#chat-box").scrollTop() + 330
+                scrollTop: $("#chat-box").scrollTop() + 300
             }, 500);
         else if($(this).attr('id') == "up")
             $("#chat-box").animate({
-                scrollTop: $("#chat-box").scrollTop() - 330
+                scrollTop: $("#chat-box").scrollTop() - 300
             }, 500);
     });
 
