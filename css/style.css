@@ -111,6 +111,14 @@ body {
     background-color: rgba(255,255,255, 0.9);
 }
 
+#iphone-bottom {
+    width:241px;
+    position:absolute;
+    top:394px;
+    z-index:100;
+    background-color: rgba(255,255,255, 0.9);
+}
+
 #iphone-screen-fade {
     position:relative;
     width: 100%;
@@ -131,9 +139,9 @@ body {
     position:absolute;
     top:0px;
     padding-top:52px;
-    height:370px;
+    height:335px;
     overflow:hidden;
-    padding-bottom:5px;
+    padding-bottom:39px;
 }
 
 .vic-box,
