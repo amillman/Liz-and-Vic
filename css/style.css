@@ -1,17 +1,17 @@
 @font-face
 {
-    font-family: HNL;
-    src: url("../font/HelveticaNeueLight.ttf");
+    font-family: HN;
+    src: url("../font/helveticaneue-webfont.ttf");
 }
 
 @font-face
 {
-    font-family: FontAwesome;
+    font-family: FontAws;
     src: url("../font/fontawesome-webfont.ttf");
 }
 
 * {
-    font-family: HelveticaNeue;
+    font-family: 'HN';
     color:white;
     font-size:12px;
     line-height:16px;
@@ -60,7 +60,7 @@ body {
 .arrow {
     position:absolute;
     left:-70px;
-    font-family:FontAwesome;
+    font-family:FontAws;
     font-size:70px;
     color:#cccccc;
     opacity:0;
